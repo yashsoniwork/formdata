@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body> {{!-- {{>navbar}} --}} <form action="/partials/register" method="POST">
+        <div class="form">
+            <div class="title">Welcome</div>
+            <div class="subtitle">Let's create your account!</div>
+            <div class="input-container ic1">
+                <input id="firstname" class="input" type="text" name="firstname" placeholder=" " required />
+                <div class="cut"></div>
+                <label for="firstname" class="placeholder">First name</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="lastname" class="input" type="text" name="lastname" placeholder=" " />
+                <div class=" cut cut_last"></div>
+                <label for="lastname" class="placeholder">Last name (optional)</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="email" class="input" type="email" name="email" placeholder=" " required spellcheck="true" />
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder">Email</>
+            </div>
+            <input type="submit" class="submit">submit</input>
+        </div>
+    </form>
+</body>
+
+</html>
